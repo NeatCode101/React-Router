@@ -8,6 +8,10 @@
 
 ### Components of React Router
 
-<BrowserRouter> imported from 'react-router-dom'
+BrowserRouter imported from 'react-router-dom'
 
-- It allows us to use all the features from react router within the app component tree.
+- It allows us to use all the features from react router within the app component tree. It generally wraps aroung the App component.
+
+Routes
+
+- Primary way to render something in React Router based on the current location. Routes can have multiple Route components which will each link to a different route if present. Route elements can be nested inside other Route elements.
