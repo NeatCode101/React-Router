@@ -15,3 +15,7 @@ BrowserRouter imported from 'react-router-dom'
 Routes
 
 - Primary way to render something in React Router based on the current location. Routes can have multiple Route components which will each link to a different route if present. Route elements can be nested inside other Route elements.
+
+`<Link>` -> imported from 'react-router-dom'
+Helps us to navigate to another route. We specify a `to` prop to which we assign the path of configured route.
+eg., `<Link to="/">`Home`<Link>`
