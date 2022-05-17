@@ -21,4 +21,4 @@ Helps us to navigate to another route. We specify a `to` prop to which we assign
 eg., `<Link to="/">`Home`<Link>`
 
 `<NavLink>` --> imported from 'react-router-dom'
-It keeps track of whether or not the link is the active link. Works exactly as `<Link>`. However, it by default recieves an active class when the link is the current route.
+It keeps track of whether or not the link is the active link. Works exactly as `<Link>`. However, it by default recieves an active class when the link is the current route. `<NavLink>` component is specifically meant for building components like navbars or a set of tabs where we would like to highlight it as the current selected item and provide useful context with screen reader. `<Link>` is generally used if we want to navigate to routes from other parts of the app.
