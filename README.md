@@ -30,6 +30,12 @@ React router provides use with `<useNavigate>` hook for navigating programmtical
 - `<useNavigate>` hook ruturns a function that we can use for this purpose.
 
 Returned function can have two signatures:
-1: Either pass a path value same as we pass to `<Link>` as "to" with an optional second {replace, state} arg. `replace` is a boolean which if set to true will replace the history in history stack and `state` can be data or state you want to pass to the next page you are routing to.
 
-2: Pass a number to indicate a change in the history stack. eg,. passing (-1) is equivalent to hitting the back button.
+1. Either pass a path value same as we pass to `<Link>` as "to" with an optional second {replace, state} arg. `replace` is a boolean which if set to true will replace the history in history stack and `state` can be data or state you want to pass to the next page you are routing to.
+
+2. Pass a number to indicate a change in the history stack. eg,. passing (-1) is equivalent to hitting the back button.
+
+### No Match Route
+
+If user tries to navigate to a page which does not exist or is not loaded for some reason, in that case to handle such a situation, we can use symbol \* as the path and direct user to a custom component or page.
+eg,. `<Route path="*" element={<NoMatch />}></Route>`
