@@ -39,3 +39,7 @@ Returned function can have two signatures:
 
 If user tries to navigate to a page which does not exist or is not loaded for some reason, in that case to handle such a situation, we can use symbol \* as the path and direct user to a custom component or page.
 eg,. `<Route path="*" element={<NoMatch />}></Route>`
+
+### Nested Routes
+
+We first create main component and configure the route for same. We then configure the inner routes as nested inside this main component using `<Route>` component. Child component path will automatically have parent path as prefix. But, parent component doesn't know what to do with these child components in the routes tree. And for that we use `<Outlet/>` component from 'react-router-dom' which renders the component corresponding to the matching child route from the parent list of routes.
