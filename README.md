@@ -47,3 +47,8 @@ We first create main component and configure the route for same. We then configu
 ### Index routes
 
 When we have nested routes inside a route and we want one of the nested routes to be rendered at the parent url we can use index route. Just specify index attribute instead of path inside the `<Route>` and the element to be rendered.
+
+### Dynamic Routes
+
+If the route parameters can vary in value, we can make use of dynamic routes. We can specify a url param denoted by a colon prefix in the path.
+React router will always try to match the route which is more specific before trying to match a dynamic route. We can also nest the dynamic routes.
