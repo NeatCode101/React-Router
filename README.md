@@ -56,3 +56,7 @@ React router will always try to match the route which is more specific before tr
 ### URL params
 
 We can access the dynamic routes params using the `useParams` hook imported from `react-router-dom`. we can then invoke this hook to access the paramaters of the dynamic route and use them accordingly.
+
+### Search params
+
+The `useSearchParams` hook is used to read and modify the query string in the url for the current location. It returns an array of two values: the currrent location's search params and a function that may be used to update them. We can use `get()` on first value of the array to get hold of different params.
