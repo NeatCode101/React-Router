@@ -43,3 +43,7 @@ eg,. `<Route path="*" element={<NoMatch />}></Route>`
 ### Nested Routes
 
 We first create main component and configure the route for same. We then configure the inner routes as nested inside this main component using `<Route>` component. Child component path will automatically have parent path as prefix. But, parent component doesn't know what to do with these child components in the routes tree. And for that we use `<Outlet/>` component from 'react-router-dom' which renders the component corresponding to the matching child route from the parent list of routes.
+
+### Index routes
+
+When we have nested routes inside a route and we want one of the nested routes to be rendered at the parent url we can use index route. Just specify index attribute instead of path inside the `<Route>` and the element to be rendered.
