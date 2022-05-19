@@ -52,3 +52,7 @@ When we have nested routes inside a route and we want one of the nested routes t
 
 If the route parameters can vary in value, we can make use of dynamic routes. We can specify a url param denoted by a colon prefix in the path.
 React router will always try to match the route which is more specific before trying to match a dynamic route. We can also nest the dynamic routes.
+
+### URL params
+
+We can access the dynamic routes params using the `useParams` hook imported from `react-router-dom`. we can then invoke this hook to access the paramaters of the dynamic route and use them accordingly.
